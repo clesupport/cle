@@ -1,0 +1,182 @@
+
+
+/* This is for navigation bar */
+/* Badge Custom Menu */
+a#menu_badge:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f091";
+	margin-right: 5px;}
+
+/* Question Bank Custom Menu */
+a#menu_qbank:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f128";
+	margin-right: 5px;}
+
+/* Classlist Custom Menu */
+a#menu_classlist:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f0ae";
+	margin-right: 5px;}
+
+/* Reports Custom Menu */
+a#menu_report:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f187";
+	margin-right: 5px;}
+	
+/* Social Wall Custom Menu */
+a#menu_wall:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f0c0";
+	margin-right: 5px;}
+
+/* FAQ Custom Menu */
+a#menu_faq:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f06a";
+	margin-right: 5px;}
+	
+/* Manage Badge Custom Menu */
+a#menu_manage_badge:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f090";
+	margin-right: 5px;}
+
+/* Add New Badge Custom Menu */
+a#menu_add_badge:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f0fe";
+	margin-right: 5px;}
+	
+/* QBank Question Custom Menu */
+a#menu_qbank_question:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f128";
+	margin-right: 5px;}
+
+/* QBank Categories Custom Menu */
+a#menu_qbank_category:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f097";
+	margin-right: 5px;}
+	
+/* QBank Import Custom Menu */
+a#menu_qbank_import:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f019";
+	margin-right: 5px;}
+	
+/* QBank Export Custom Menu */
+a#menu_qbank_export:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f093";
+	margin-right: 5px;}
+
+/* Reports dropdown Menu */
+a#menu_report_completion:before,a#menu_logstoday:before,a#menu_report_all_logs:before,a#menu_summary_report:before,a#menu_subject_report:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f15b";
+	margin-right: 5px;}
+
+/* Student My Achievement Custom Menu */
+a#menu_myachievements:before,a#menu_asreport:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f0c5";
+	margin-right: 5px;}
+
+/* Certificate Custom Menu */
+a#menu_certificate:before{
+	display:inline-block;
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;	
+	content:"\f0ae";
+	margin-right: 5px;}

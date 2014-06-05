@@ -1,0 +1,985 @@
+/***DAVE FOOTER ***/
+footer#page-footer{
+background-color: #f49e00;
+opacity:0.9999;
+border-radius: 8px;
+    border: 1px solid #E1E1E1;
+    margin-bottom: 10px;
+}
+.footerlinks{
+    color:white;
+    text-align: center;
+
+
+}
+/***DAVE BLOCKS***/
+.block{
+    background: white;	
+    /*filter:alpha(opacity=60);
+ */   /*opacity:0.9;*/
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #E1E1E1;
+    margin-bottom: 10px;
+}
+/**DAVE BLOCK HEADER***/
+.block .header{
+    background: #fff498;
+    /*filter:alpha(opacity=60);
+ */   /*opacity:0.90;*/    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #E1E1E1;
+    margin-bottom: 10px;
+}
+/*ADD ACTIVITY RESOURCE HEADER*/
+#qtypechoicecontainer.yui-panel .hd,
+.moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd,
+.moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
+    margin:0;
+    padding:3px;
+    font-size:12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color:#333333;
+    text-align: center;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid #BBBBBB;
+    background: #ffc578; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffc578 0%, #fb9d23 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc578), color-stop(100%,#fb9d23)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffc578 0%,#fb9d23 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffc578 0%,#fb9d23 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffc578 0%,#fb9d23 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffc578 0%,#fb9d23 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#fb9d23',GradientType=0 ); /* IE6-9 */
+}
+/*ADD ACTIVITY RESOURCE BUTTON*/
+.choosercontainer #chooseform .option input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+/*nonoption GAME LABEL*/
+.choosercontainer #chooseform .nonoption {
+margin-left:-15px;
+}
+/*Game label*/
+.choosercontainer #chooseform .subtype {
+margin-left:-5px;
+}
+#chooseqtype .selected,
+.choosercontainer #chooseform .selected {
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #ccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-bottom-color: #b3b3b3;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+
+/** ADD ACTIVITIES AND RESOURCE ICON MODIFY***/
+span.modicon {
+display:none;}
+.choosercontainer #chooseform .option label[for=module_assign] span.typename::before {
+content:"\f02d  ";
+font-family: FontAwesome;
+color: #0000a6;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_chat] span.typename::before {
+content:"\f0e5  ";
+font-family: FontAwesome;
+color: #00FF22;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_choice] span.typename::before {
+content:"\f0cb  ";
+font-family: FontAwesome;
+color: #FF0000;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_forum] span.typename::before {
+content:"\f0e6  ";
+font-family: FontAwesome;
+color: #feb801;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_quiz] span.typename::before {
+content:"\f180  ";
+font-family: FontAwesome;
+color: #00E5FF;
+font-size: 18px;
+}
+
+.choosercontainer #chooseform .option label[for=module_resource] span.typename::before {
+content:"\f0f6  ";
+font-family: FontAwesome;
+color: #FF8400;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_folder] span.typename::before {
+content:"\f114  ";
+font-family: FontAwesome;
+color: #FF00DD;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_page] span.typename::before {
+content:"\f15c  ";
+font-family: FontAwesome;
+color: #AA00FF;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_url] span.typename::before {
+content:"\f08e  ";
+font-family: FontAwesome;
+color: #0099FF;
+font-size: 18px;
+}
+.choosercontainer #chooseform .option label[for=module_label] span.typename::before {
+content:"\f02c  ";
+font-family: FontAwesome;
+color: #C8FF00;
+font-size: 18px;
+}
+/*game icon*/
+.choosercontainer #chooseform .option label[for=module_cross] span.typename::before {
+content:"\f11b  ";
+font-family: FontAwesome;
+color: #0000ff;
+font-size: 15px;
+}
+.choosercontainer #chooseform .option label[for=module_hangman] span.typename::before {
+content:"\f11b  ";
+font-family: FontAwesome;
+color: #0000ff;
+font-size: 15px;
+}
+.choosercontainer #chooseform .option label[for=module_millionaire] span.typename::before {
+content:"\f11b  ";
+font-family: FontAwesome;
+color: #0000ff;
+font-size: 15px;
+}
+/*game icon on course*/
+.course-content ul.topics li.section .content ul.section li.activity.game.modtype_game div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f11b  ";
+font-family: FontAwesome;
+color: #0000ff;
+font-size: 25px;
+}
+/** ACTTIVITY AND RESOURCE ON COURSE CHANGE ICON **/
+/*hide icon*/
+img.iconlarge {
+display:none;
+}
+/*url*/
+.course-content ul.topics li.section .content ul.section li.activity.url.modtype_url div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f08e  ";
+font-family: FontAwesome;
+color: #0099FF;
+font-size: 25px;
+}
+/*assignment*/
+.course-content ul.topics li.section .content ul.section li.activity.assign.modtype_assign div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f02d  ";
+font-family: FontAwesome;
+color: #0000a6;
+font-size: 25px;
+}
+/*page*/
+.course-content ul.topics li.section .content ul.section li.activity.page.modtype_page div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f15c  ";
+font-family: FontAwesome;
+color: #AA00FF;
+font-size: 25px;
+}
+/*chat*/
+.course-content ul.topics li.section .content ul.section li.activity.chat.modtype_chat div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f0e5  ";
+font-family: FontAwesome;
+color: #00FF22;
+font-size: 25px;
+}
+/*forum*/
+.course-content ul.topics li.section .content ul.section li.activity.forum.modtype_forum div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f0e6  ";
+font-family: FontAwesome;
+color: #feb801;
+font-size: 25px;
+}
+/*choice*/
+.course-content ul.topics li.section .content ul.section li.activity.choice.modtype_choice div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f0cb  ";
+font-family: FontAwesome;
+color: #FF0000;
+font-size: 25px;
+}
+/*quiz*/
+.course-content ul.topics li.section .content ul.section li.activity.quiz.modtype_quiz div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f180  ";
+font-family: FontAwesome;
+color: #00E5FF;
+font-size: 25px;
+}
+/*files*/
+.course-content ul.topics li.section .content ul.section li.activity.resource.modtype_resource div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f0f6  ";
+font-family: FontAwesome;
+color: #FF8400;
+font-size: 25px;
+}
+/*folder*/
+.course-content ul.topics li.section .content ul.section li.activity.folder.modtype_folder div .mod-indent-outer .activityinstance a span.instancename::before {
+content:"\f114  ";
+font-family: FontAwesome;
+color: #FF00DD;
+font-size: 25px;
+}
+/*label*/
+/*label doesnt have icon*/
+span.icon.c0 {
+display:none;
+}
+/*upcoming events*/
+/*
+div#inst12 .block_calendar_coming .content .event span.icon.c0 img.icon[Chat] a::before {
+content:"\f0c0  ";
+font-family: FontAwesome;
+color: #00FF22;
+font-size: 25px;
+}*/
+
+
+
+
+
+/**move icons **/
+div.left.side::before{
+content:"\f0b2  ";
+font-family: FontAwesome;
+color: [[setting:themecolor]];
+font-size: 12px;
+}
+div.left.side img{
+display:none;
+}
+/*.editing_move::after{
+content:"\f0ab  ";
+font-family: FontAwesome;
+color: #ff8903;
+font-size: 15px;
+}
+
+
+
+/*settings*/
+.path-course-view .section .summary a:before {
+content:"\f0ad ";
+font-family: FontAwesome;
+color: [[setting:themecolor]];
+font-size: 12px;
+}
+.path-course-view .section .summary img{
+display:none;
+}
+
+
+/*highlight*/
+.course-content ul.topics li.section .right img.icon {
+display:none;
+}
+.editing_highlight::before {
+font-family: FontAwesome;
+content:"\f08d";
+font-size:20px;
+color: [[setting:themecolor]];
+}
+.editing_showhide::before {
+font-family: FontAwesome;
+content:"\f06e ";
+font-size:20px;
+color: [[setting:themecolor]];
+}
+.block.invisible{
+font-family: FontAwesome;
+content:"\f06e ";
+font-size:20px;
+color: [[setting:themecolor]];
+}
+
+/*add delete sections below*/
+#changenumsections.mdl-right img{
+display:none;
+}
+#changenumsections.mdl-right a.increase-sections::before{
+font-family: FontAwesome;
+content:" \f055 ";
+font-size:18px;
+}
+#changenumsections.mdl-right a.reduce-sections::before{
+font-family: FontAwesome;
+content:" \f057 ";
+font-size:18px;
+}
+
+
+
+
+/*navigation block, activity and resource icon*/
+img.smallicon.navicon {
+display:none;
+}
+/*assignment*/
+.block_navigation .block_tree p.tree_item a[title="Assignment"]::before{
+font-family: FontAwesome;
+content:"\f02d  ";
+font-size:18px;
+}
+/*page*/
+.block_navigation .block_tree p.tree_item a[title="Page"]::before{
+font-family: FontAwesome;
+content:"\f15c  ";
+font-size:18px;
+}
+/*quiz*/
+.block_navigation .block_tree p.tree_item a[title="Quiz"]::before{
+font-family: FontAwesome;
+content:"\f180  ";
+font-size:18px;
+}
+/*File*/
+.block_navigation .block_tree p.tree_item a[title="File"]::before{
+font-family: FontAwesome;
+content:"\f0f6  ";
+font-size:18px;
+}
+/*Folder*/
+.block_navigation .block_tree p.tree_item a[title="Folder"]::before{
+font-family: FontAwesome;
+content:"\f114  ";
+font-size:18px;
+}
+/*Choice*/
+.block_navigation .block_tree p.tree_item a[title="Choice"]::before{
+font-family: FontAwesome;
+content:"\f0cb  ";
+font-size:18px;
+}
+/*URL*/
+.block_navigation .block_tree p.tree_item a[title="URL"]::before{
+font-family: FontAwesome;
+content:"\f08e  ";
+font-size:18px;
+}
+/*Chat*/
+.block_navigation .block_tree p.tree_item a[title="Chat"]::before{
+font-family: FontAwesome;
+content:"\f0e5  ";
+font-size:18px;
+}
+/*Forum*/
+.block_navigation .block_tree p.tree_item a[title="Forum"]::before{
+font-family: FontAwesome;
+content:"\f0e6  ";
+font-size:18px;
+}
+div.box.generalbox h3 img{
+display:none;
+}
+div.box.generalbox h2, div.box.generalbox h3 {
+margin-left:10px;
+}
+
+.moodle-actionmenu[data-enhanced].show .menu.align-tr-br {
+background-color: [[setting:themecolor]];
+
+}
+/*Questionmark Helptool*/
+span.helptooltip img{
+display:none
+}
+span.helptooltip a:after{
+font-family: FontAwesome;
+content:"  \f059  ";
+font-size:18px;
+}
+
+
+/*body bg*/
+/*#page-admin-setting-theme_nephila_color{
+background-color:#fff498;
+}*/
+/*#page-course-view-topics{
+background-color:#fff498;
+}*/
+
+#fitem_id_introeditor .fitemtitle label[for="id_introeditor"]::before{content:'Instruction / '}
+
+
+/*nav block incourse*/
+p.tree_item.branch.canexpand.navigation_node{
+display:none;
+}
+p.tree_item.leaf.hasicon{
+display:none;
+}
+li.type_course.depth_2.collapsed.contains_branch{
+display:none;
+}
+li.type_user.depth_2.collapsed.contains_branch{
+display:none;
+}
+li.type_unknown.depth_4.collapsed.contains_branch{
+display:none;
+}
+p#expandable_branch_30_3{
+display:none;
+}
+p#expandable_branch_0_mycourses.tree_item.branch{
+display:none;
+}
+p.tree_item.branch.canexpand{
+display:none;
+}
+/*question bank*/
+#displayoptions {
+display:none;
+}
+/*hide question type on question bank*/
+#chooseqtype .qtypeoption label[for=qtype_calculated] {
+display:none;
+}
+#chooseqtype .qtypeoption label[for=qtype_calculatedmulti] {
+display:none;
+}
+#chooseqtype .qtypeoption label[for=qtype_calculatedsimple] {
+display:none;
+}
+#chooseqtype .qtypeoption label[for=qtype_multianswer] {
+display:none;
+}
+#chooseqtype .qtypeoption label[for=qtype_numerical] {
+display:none;
+}
+
+
+/*help link direct to moodle*/
+.moodle-dialogue-base .moodle-dialogue .moodle-dialogue-content .moodle-dialogue-ft  a{
+display:none;
+}
+
+/*add new question*/
+#qtypechoicecontainer .qtypeoption input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+
+/*question icons move,edit,preview,delete*/
+/*edit*/
+#categoryquestions .iconcol.editaction img{
+display:none;
+}
+#categoryquestions .iconcol.editaction a::before{
+font-family: FontAwesome;
+content:"\f0ad  ";
+font-size:14px;
+}
+/*preview*/
+#categoryquestions .iconcol.previewaction img{
+display:none;
+}
+#categoryquestions .iconcol.previewaction a::before{
+font-family: FontAwesome;
+content:"\f002  ";
+font-size:14px;
+}
+/*move*/
+#categoryquestions .iconcol.moveaction img{
+display:none;
+}
+#categoryquestions .iconcol.moveaction a::before{
+font-family: FontAwesome;
+content:"\f0b2  ";
+font-size:14px;
+}
+/*delete*/
+#categoryquestions .iconcol.deleteaction img{
+display:none;
+}
+#categoryquestions .iconcol.deleteaction a::before{
+font-family: FontAwesome;
+content:"\f00d  ";
+font-size:18px;
+}
+
+/*action icons manage badges*/
+/*table.collection td.actions.cell.c4.lastcol a.action-icon img[title="Edit"]{
+opacity:0;
+filter:alpha(opacity=0); /* For IE8 and earlier */
+/*}
+table.collection td.actions.cell.c4.lastcol a.action-icon img[title="copy"]{
+opacity:0;
+filter:alpha(opacity=0); /* For IE8 and earlier */
+/*}
+table.collection td.actions.cell.c4.lastcol a.action-icon img[title="Delete"]{
+opacity:0;
+filter:alpha(opacity=0); /* For IE8 and earlier */
+/*}
+table.collection td.actions.cell.c4.lastcol a.action-icon::before{
+font-family: FontAwesome;
+content:"\f141";
+font-size:20px;
+position:absolute;
+}
+*/
+
+div.box.generalbox{
+color:#800000;
+}
+.mform legend span.helptooltip a{
+color:#feb801;
+}
+
+
+
+
+
+
+
+
+
+
+/*img submission
+.generaltable tbody tr.r1 .jsenabled .expandsummaryicon::after {
+font-family: FontAwesome;
+content:"\f00d  ";
+font-size:18px;
+}
+.generaltable tbody tr.r1 .expandsummaryicon::after{
+font-family: FontAwesome;
+content:"\f00d  ";
+font-size:18px;
+}
+*/
+
+
+/* THIS IS FOR SUMMARY ASSESTMENT REPORT*/
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	border: none;
+	background: #f49e00 !important; /* #f49e00 */
+	margin: 45px 0;
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}	
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tbody tr:hover>th{background-color: transparent !important;}
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tr.heading a{ color: #fff;}
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tr.heading a:active{ color: #fff;}
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tr.heading a:visited{ color: #fff;}
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tr.heading a:hover{ color: #000;}
+
+table#user-grades .catlevel1{
+	color: #fff;
+	background-color: transparent !important;
+	border:none !important;
+}
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tr.heading{
+	background-color: transparent !important;
+	padding: 10px 8px;
+	border-bottom: 2px solid #fff;
+}
+
+/*table#user-grades.gradestable.flexible.boxaligncenter.generaltable .odd th, .grade{
+	background-color: #fff !important;
+	border-bottom: 1px solid #CCC;
+}*/
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tbody tr.odd, tr.even{
+	background-color: #fff !important;
+	border-bottom: 1px solid #CCC;
+}
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tbody tr.odd th.header{
+	background: none;
+}
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable th.header{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #CCC;	
+	color: #000;
+	text-align: center;
+}
+
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable th.header:hover{
+	background: #fff;	
+}
+
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable th.user{
+	padding-right: 5em !important;
+	background: #fff;
+}
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable th.userreport.c1{
+	border-left: none;
+	border-right: none;
+	background-color: #fff !important;
+}
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable th.user a{
+	color: #000;
+}
+
+table#user-grades.gradestable.flexible.boxaligncenter.generaltable tr.avg .cell{
+	background: #fff !important;
+	border-bottom: none;
+	text-align: right;	
+}
+
+/* END SUMMARY ASSESTMENT REPORT */
+
+
+/* THIS IS FOR SUBJECT ASSESTMENT REPORT */
+table.boxaligncenter.generaltable.user-grade{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 10pt;
+	border: none;;
+	background: #f49e00 !important; /* #f49e00 */
+	margin: 45px 0;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table.boxaligncenter.generaltable.user-grade thead tr th{ padding: 15px; text-align: center;}
+table.boxaligncenter.generaltable.user-grade tbody th, table.boxaligncenter.generaltable.user-grade tbody th td{ 
+	background: #FFF !important;
+	border: none !important;
+}
+
+table.boxaligncenter.generaltable.user-grade tbody tr{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #CCC;
+	color: #000;
+}
+
+
+
+table.boxaligncenter.generaltable.user-grade td.oddd1{
+	background: #FFF !important;
+	border-bottom: none;
+}																																																																																																					
+
+table.boxaligncenter.generaltable.user-grade  td.oddd1.b1t.b2b.b1l{
+ 	display: none;
+ }
+
+select.select.autosubmit.urlselect{
+	display: none;
+} 
+
+/* 
+This is for student class list 
+Hide the initial bar and table controls 
+*/
+div.userlist table.controls, div.initialbar{display: none;}
+
+
+/*Manage Criteria*/
+table.collection th.criteria, td.criteria{
+	display: none;	
+}
+
+/*Chat*/
+div#chatcurrentusers table{
+	width: 50%;
+	
+}
+div#chatcurrentusers table .chatuserdetails{
+	padding: 10px;
+	text-align: center;
+}
+
+img.userpicture.defaultuserpic{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#fitem_id_allowupdate, #fitem_id_limitanswers{
+	display: none;	
+}
+
+/* END SUBJECT ASSESSMENT REPORT */
+
+
+/* Choice */
+
+div#intro.box.generalbox{
+	font-size: 17pt;
+	font-weight: bold;
+	text-align: center;	
+	margin-bottom: 0.5em;
+	
+}
+
+/* Forum */
+div.discussioncontrols.clearfix{
+	visibility: hidden;	
+}
+
+form.horizontal{
+	text-align: center;
+	background: #f49e01 !important;
+	padding: 1.5em;
+	color: #ffffff;
+	-moz-border-radius: 15px;
+   border-radius: 15px;
+   
+}
+
+form ul.choices label{
+	font-size: 15pt;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+input.button{margin-top: 2em; font-weight: bold;}
+
+/* For Messages */
+td.link span.blockcontact{display: none;}
+table.messagesearchresults tbody tr td {padding: 10px;}
+td.contact{font-size: 12pt;}
+
+ 
+/* Hide "NOW" in progress bar */
+table.progressBarProgressTable tbody tr td.progressBarHeader{
+		display: none;
+}
+
+/* Student Class List */
+form#filterform.mform #fitem_id_ifilter, #fitem_id_status, #fgroup_id_buttons, #fitem_id_role{
+	display: none;	
+}
+
+div.userlist div.rolesform, div.userlist h3{
+	display: none;	
+}
+
+.questionbankwindow.block {
+float: right;		
+}
+	font-size: 12pt;	
+}
+
+
+
+#block-region-side-post .block{
+	
+	padding: 0;
+	margin: 0;
+	padding-left: 7px;
+	-webkit-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border-color: transparent;
+	border-left-color: #000;
+	background-color: transparent;
+	background: none;
+	
+}
+
+#block-region-side-post .block div.header{
+	border:none;
+	background: none;
+	background-color: transparent;	
+}
+
+span.skip-block-to{
+	height: 0;
+	display: none;
+	overflow: hidden !important;
+}
+
+/** CUSTOM LEFT BLOCK  KENNY**/
+aside#block-region-side-pre .block{
+	
+	padding: 0;
+	margin: 0;
+	padding-left: 7px;
+	-webkit-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border-color: transparent;
+	border-right-color: #CCC;
+	background-color: transparent;
+	background: none;
+	
+}
+
+#block-region-side-pre .block div.header{
+	border:none;
+	background: none;
+	background-color: transparent;	
+}
+
+/* END CUSTOM LEFT BLOCK */
+
+/*** Your progress ***/
+div#completionprogressid.completionprogress{
+	z-index: -10;
+}
+
+#page-footer{
+	z-index: -1000;
+}
+
+
+div.box.generalbox{
+color:#800000;
+}
+.mform legend span.helptooltip a{
+color:#feb801;
+}
+
+
+footer{
+	margin-top: 100px;	
+}
+
+div#region-bs-main-and-pre div.row-fluid div h2{
+	text-transform: uppercase;		
+}
+
+/*	background-color: #f49e00;*/
+table.generaltable.quizattemptsummary{
+	border: 1px solid;	
+	-webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+   box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+}
+
+table.generaltable.quizattemptsummary thead{
+	background-color: #FF9933;/*f49e00*/
+	border-bottom-color: transparent;
+}
+
+div.info{
+	 background-color: #FFF !important;
+	 box-shadow: .1em .1em .2em rgba(0, 0, 0, .2);
+    border-radius: .5em;
+    border: .4em solid rgba(255, 255, 255, .1);
+}
+
+div.formulation{
+	 background-color: #FF9933 !important;/*f49e00*/
+	 margin: 1em;
+    box-shadow: .1em .1em .2em rgba(0, 0, 0, .2);
+    border-radius: .5em;
+    border: .4em solid rgba(255, 255, 255, .1);
+}
+
+div.formulation div.ablock table.answer tbody tr td.control.correct{
+	 background-color: #FF9933 !important; /*f49e00*/
+}
+
+table.generaltable.generalbox.quizreviewsummary tbody tr th{ 
+	 background-color: #ffffff !important;
+	 border: none !important;
+	/* box-shadow: .1em .1em .2em rgba(0, 0, 0, .2);
+    border-radius: .5em;
+    border: .4em solid rgba(255, 255, 255, .1);*/
+	 
+}
+
+table.generaltable.generalbox.quizreviewsummary tbody tr td{
+	background-color: #ffffff !important;
+	border: none !important;
+	 /* box-shadow: .1em .1em .2em rgba(0, 0, 0, .2);
+    border-radius: .5em;
+    border: .4em solid rgba(255, 255, 255, .1);*/
+}
+
+table.generaltable.generalbox.quizreviewsummary {
+	 box-shadow: .1em .1em .2em rgba(0, 0, 0, .2);
+    border-radius: .5em;
+    border: .4em solid rgba(255, 255, 255, .1);
+}
+
+div.questionflag.editable input[type='image']{
+	
+}
+
+
+/*  SITE NEWS  */
+table.forumheaderlist th.header.replies{ display: none; }
+table.forumheaderlist td.replies{ display: none; }
+
+a[title='Turn editing off']{display: none;}
+
+/*Remove New Forum(Kenny)*/
+
+li#section-0{display:none;}
+
+
+#changenumsections.mdl-right a.increase-sections::after{
+	font-family: FontAwesome;
+	content: " \f055 ";
+	font-size: 18px;
+}
+
+#changenumsections.mdl-right a.increase-sections::before{
+	font-family: FontAwesome;
+	content: none;	
+}
+
+h3.categoryname a{
+	font-size:12px;
+}
+
+/*Study Room*/
+.bg{width:500px; height:356px; /*background-image:url("../Background1.png");*/ background-color:#ccc}
+.left{width:150px; height:356px; float: left; background-color: transparent;}
+.center{width:210px; height:356px; float: left; background-color: transparent;}
+.profile{width:81px; height:64px;float: left;margin-left: 30px;margin-top: 10px }
+.calendar{width:81px; height:64px;float: left;margin-left: 10px;margin-top: 10px  }
+.badges{width:81px; height:64px;float: left;margin-left: 30px;margin-top: 10px }
+.space1{width:81px; height:64px;float: left;margin-left: 10px;margin-top: 10px  }
+ -webkit-filter: drop-shadow(1px 1px 10px #f49e00);
+.space2{width:210px; height: 15px;background-color: transparent; float:left}
+.files{width:81px; height:64px;float: left;margin-left: 30px;margin-top: 10px}
+.right{width:140px; height:356px; float: left; background-color: transparent;}
+.space4{width: 140px; height: 170px;}
+.messages{width: 81px; height: 64px; float: left;margin-left: 2px;}
+
+.imgProfile:hover, .imgCalendar:hover, .imgBadges:hover{ 
+	-moz-box-shadow: 0 0 20px rgba(251,255,0,0.7);
+	-webkit-box-shadow: 0 0 20px rgba(251,255,0,0.7);
+	box-shadow: 0 0 20px rgba(251,255,0,0.7); 
+}
+.imgMessages:hover, .imgFiles:hover {
+ -webkit-filter: drop-shadow(1px 1px 10px #f49e00);
+}
+
+

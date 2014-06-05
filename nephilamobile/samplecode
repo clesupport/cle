@@ -1,0 +1,2 @@
+<ul class = "nav"><a title="Badges" data-toggle="dropdown" href="http://localhost/moodle/my/index.php" class="dropdown-toggle"> 
+<li class="dropdown"><i class="fa fa-trophy"></i> Badges</a><ul class="dropdown-menu"><li><a>a</a><li></ul></li></ul>

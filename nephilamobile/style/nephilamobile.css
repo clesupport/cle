@@ -1,0 +1,56 @@
+div.header {
+font-size:10.5pt;
+}
+p,
+ol,
+li {
+  font-size: 14pt;
+}
+div.activityhead a, div.activityhead {
+  font-size: 12pt;
+}
+dd, dt {
+  font-size: 12pt;
+}
+tbody {
+  font-size: 12pt;
+}
+.modified {
+  font-size: 12pt;
+}
+label {
+  font-size: 14pt;
+}
+.path-mod-glossary .entrybox a, .path-mod-glossary .entrybox b {
+  font-size: 12pt;
+}
+.dir-ltr {
+  font-size: 12pt;
+}
+/*@media (max-width:1020px) {
+  div#bodyimage img {
+    display: none;
+  }
+.span111 img {
+display:none;
+}
+form#login .formrow{
+margin-left:auto;
+padding-left:25px;
+padding-right:25px;
+margin-left:150px;
+}
+form#login .formrow input{
+margin:auto;
+padding-left:50px;
+padding-right:50px;
+
+}
+form#login .formrow2 {
+margin-left:auto;
+padding-left:auto;
+}
+}
+#learningwallcontent iframe{
+font-size:15pt;
+}
