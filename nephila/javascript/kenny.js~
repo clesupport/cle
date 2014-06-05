@@ -52,4 +52,15 @@ $("div.bottom").remove();
 //$("div#region-bs-main-and-pre div.row-fluid div h2").toUpperCase();
 
 
+$("a[title='My Learning Wall']").click(function(){ 
+$("#region-main").fadeOut();   
+$("#learningwall" ).show( "slow" );
+$("#learningwallcontent").show("slow");
+});
+
+
+
+// hide grade category except on editing quiz page
+$( "fieldset#id_modstandardgrade" ).hide();
+$( "fieldset#id_modstandardgrade" ).has( "div#fitem_id_attempts" ).css( "display", "" );
 

@@ -8,11 +8,6 @@ $("select#id_studentlogs").val('1');
 $("fieldset#id_sessionshdr.clearfix.collapsible").hide();
 
 
-/*jQuery("#id_first_header input:checkbox:contains('CLE Teacher')").map(function() {
-    var str =  $('label[for=' + $(this).attr('id') + ']');
-    alert(str);
-});*/
-
 // THIS IS FOR BADGE CRITERIA
 $("#id_first_header label:contains('CLE Teacher')").prev('input[type=checkbox]').prop( "checked", true ); // label:contains('CLE Teacher')
 $("fieldset .felement.fgroup:contains('Manager')").remove();
@@ -24,13 +19,6 @@ $("fieldset .felement.fgroup:contains('CLE')").css('visibility', 'visible');
 
 
 $("div [id*='fitem_id_limit']").hide();
-
-/*
-$('table.messagesearchresults tr').each(function(){
-  if($(this).children('td:empty').length === $(this).children('td').length){
-    $(this).remove(); // or $(this).hide();
-  }
-});*/
 
 // Hide General on Subject Navigation
 $("li.type_structure:contains('General')").hide();
@@ -57,8 +45,6 @@ $("#region-main").fadeOut();
 $("#learningwall" ).show( "slow" );
 $("#learningwallcontent").show("slow");
 });
-
-
 
 // hide grade category except on editing quiz page
 $( "fieldset#id_modstandardgrade" ).hide();
